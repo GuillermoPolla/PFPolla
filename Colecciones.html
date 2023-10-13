@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="description"
+        content="Descubre la mejor tienda para los fans de The Flash. Encuentra una amplia selección de ropa y accesorios inspirados en el veloz superhéroe. ¡Viste como el hombre más rápido del mundo con nuestra colección de remeras, shorts y más!">
+    <meta name="keywords"
+        content="The Flash, Reverse Flash, Speedster, Scarlett Speedster,Ropa de superhéroe,Accesorios de The Flash,Ropa de The Flash,mercaderia de The Flash,Colección de The Flash,Mercadería oficial de DC Comics, Comprar ropa de The Flash,Vestuario de The Flash">
     <title>Colecciones</title>
-    <link rel="icon" type="image/x-icon" href="./Images/FlashFavicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/Images/FlashFavicon.ico" alt="Icono Flash">
 
 </head>
 
 <body>
-    <nav>
-        <header>
-            <title>Flash Shop</title>
-            <link rel="icon" type="image/jpg" href="./Images/FlashFavicon.jpg" />
+    <header>
+        <nav>
+            <link rel="icon" type="image/jpg" href="./assets/Images/FlashFavicon.jpg" />
             <ul class="menu-horizontal">
                 <li><a class="nombre-compania" href="./index.html"> THE FLASH </a></li>
                 <li><a href="./index.html"> Inicio </a></li>
@@ -24,41 +28,35 @@
                 <li><a href="./Accesorios.html"> Accesorios </a></li>
                 <li><a href="./Help.html"> Ayuda </a></li>
             </ul>
-
             <p class="secciones">
                 Colecciones
             </p>
-        </header>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- <h1 class="galerias-de-venta">
-        <img src="./Images/Gorra.jpg" alt="Gorra de Flash">
-        <img src="./Images/RemeraColeccion.jpg" alt="Remera de Coleccion">
-        <img src="./Images/ShortDeBaño.jpg" alt="Short de baño con logotipo">
-        <img src="./Images/MediaColeccion.jpg" alt="Medias de Flash">
+    <main>
+        <section>
+            <div class="galeria">
+                <div class="imagen">
+                    <img src="./assets/Images/Gorra.jpg" alt="Gorra de Flash">
+                    <div class="pie-foto">Gorra de Flash - $19.99</div>
+                </div>
+                <div class="imagen">
+                    <img src="./assets/Images/RemeraColeccion.jpg" alt="Remera de Coleccion">
+                    <div class="pie-foto">Remera de Colección - $25.99</div>
+                </div>
+                <div class="imagen">
+                    <img src="./assets/Images/ShortDeBaño.jpg" alt="Short de baño con logotipo">
+                    <div class="pie-foto">Short de baño con logotipo - $24.99</div>
+                </div>
+                <div class="imagen">
+                    <img src="./assets/Images/MediaColeccion.jpg" alt="Medias de Flash">
+                    <div class="pie-foto">Medias de Flash - $9.99 (paquete de 3 pares)</div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-
-    </h1>
- -->
-    <div class="galeria">
-        <div class="imagen">
-            <img src="./Images/Gorra.jpg" alt="Gorra de Flash">
-            <div class="pie-foto">Descripcion imagen 1</div>
-        </div>
-        <div class="imagen">
-            <img src="./Images/RemeraColeccion.jpg" alt="Remera de Coleccion">
-            <div class="pie-foto">Descripcion imagen 1</div>
-        </div>
-        <div class="imagen">
-            <img src="./Images/ShortDeBaño.jpg" alt="Short de baño con logotipo">
-            <div class="pie-foto">Descripcion imagen 1</div>
-        </div>
-        <div class="imagen">
-            <img src="./Images/MediaColeccion.jpg" alt="Medias de Flash">
-            <div class="pie-foto">Descripcion imagen 1</div>
-        </div>
-    </div>
     <footer>
         <div class="footer">
             <ol class="footer-links">
@@ -69,8 +67,10 @@
             </ol>
         </div>
         <div class="derechos-reservados">
-            © 2023 The Flash Shop - Todos los derechos reservados
+            <p> © 2023 The Flash Shop - Todos los derechos reservados </p>
         </div>
-
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
