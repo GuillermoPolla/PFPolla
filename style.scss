@@ -262,14 +262,14 @@ form {
 
 
 /* Estilo para dispositivos, si es necesario */
-@media (max-width: 1300px) {
+@media (max-width: 1280px) {
   .menu-horizontal {
     flex-direction: column;
     align-items: center;
   }
 
   .imagen-lateral img {
-    max-width: fit-content;
+    max-width: 100%;
     height: auto;
   }
 
@@ -300,7 +300,8 @@ form {
       >li>a {
         display: block;
         max-width: fit-content;
-
+        align-items: center;
+        text-align: center;
 
       }
     }
@@ -308,25 +309,36 @@ form {
 
   .galeria-index,
   .galeria {
+    display: grid;
+
     flex-direction: column;
     align-items: center;
-    max-width: fit-content;
-    overflow: hidden;
+    max-width: 100%;
 
-    .imagen-lateral {
-      flex: 0 0 100%;
-      max-width: fit-content;
-      margin-bottom: 20px;
-      padding-top: 100px;
-      overflow: hidden;
-
-    }
-
-    .boton {
-      flex: 0 0 100%;
+    .imagen {
+      position: relative;
       text-align: center;
+
+
+      img {
+        margin-top: 4.375rem;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .imagen-lateral {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .boton {
+        flex: 0 0 100%;
+        text-align: center;
+      }
     }
   }
+
 
   .ayuda,
   .titulos,
@@ -334,32 +346,17 @@ form {
   .subtitulos1,
   .subtitulos2,
   .ayuda-texto,
-  form {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: fit-content;
-  }
-
-  .galeria {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: fit-content;
-  }
+  {
+  padding-top: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+}
 }
 
-
-/* Estilo predeterminado para los titulos del index */
-.subtitulos1 {
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 6.61rem;
-  }
-}
 
 /* Ajuste de estilo para dispositivos de ancho máximo de 768px) */
 @media (max-width: 768px) {
@@ -368,32 +365,36 @@ form {
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    .secciones {
       font-size: 3.5rem;
       text-align: center;
     }
   }
 }
 
+@media (min-width: 1300px) {
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
 
-@keyframes show{
-  from{
-    opacity: 0;
-    scale: 25%;
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
   }
-  to{
-    opacity: 1;
-    scale: 100%;
+
+  .galeria-index,
+  .galeria {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
   }
-}
-
-.galeria-index,.galeria {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-
-  animation-timeline: --image ;
-  animation-name: show;
-
-  animation-range: entry 15% cover 50%;
-  animation-fill-mode: both;
 }
