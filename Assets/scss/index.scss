@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+
+.galeria-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+
+    .imagen-lateral {
+        flex: 0 0 30%;
+        max-width: 100%;
+
+    }
+
+    .boton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 4%;
+        border: 0.219rem solid black;
+        border-radius: 4.375rem;
+        font-size: 2.5rem;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.625rem 1.25rem;
+
+        a {
+            color: red;
+        }
+    }
+}
+
+.btn-outline-primary>li:hover {
+    text-decoration: none;
+    text-decoration-color: blue;
+}
+
+.subtitulos1 {
+    text-align: center;
+    padding-top: 11.81rem;
+    color: $ColorSubtitulos;
+    text-decoration: none;
+    font-size: 6.61rem;
+    padding-bottom: 14.17rem;
+}

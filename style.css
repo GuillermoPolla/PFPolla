@@ -1,32 +1,64 @@
 @charset "UTF-8";
 /* Estilos generales para todas las pantallas */
-* {
-  margin: 0;
-  padding: 0;
+.galeria-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+.galeria-index .imagen-lateral {
+  flex: 0 0 30%;
+  max-width: 100%;
+}
+.galeria-index .boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 4%;
+  border: 0.219rem solid black;
+  border-radius: 4.375rem;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.625rem 1.25rem;
+}
+.galeria-index .boton a {
+  color: red;
 }
 
-body {
-  background-size: cover;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.125rem;
-  color: rgba(192, 71, 11, 0.894);
+.btn-outline-primary > li:hover {
+  text-decoration: none;
+  text-decoration-color: blue;
 }
 
-/* Estilo de la barra de navegación */
-nav {
-  background-color: rgb(148, 14, 4);
-  font-size: 1.125rem;
+.subtitulos1 {
+  text-align: center;
+  padding-top: 11.81rem;
+  color: rgb(245, 9, 9);
+  text-decoration: none;
+  font-size: 6.61rem;
+  padding-bottom: 14.17rem;
 }
-nav .nombre-compania {
-  font-size: 3.438rem;
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-weight: 18.75rem;
-  font-style: oblique;
-  color: rgb(216, 211, 211);
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.625rem;
 }
-nav .nombre-compania:hover {
-  text-decoration: underline;
-  color: rgb(216, 211, 211);
+.galeria .imagen {
+  position: relative;
+  text-align: center;
+}
+.galeria .imagen img {
+  margin-top: 4.375rem;
+  max-width: 26.875rem;
+  height: auto;
+}
+
+.pie-foto {
+  margin-top: 2.188rem;
+  margin-bottom: 1.875rem;
 }
 
 .menu-horizontal {
@@ -51,69 +83,6 @@ nav .nombre-compania:hover {
   text-decoration-color: rgb(216, 211, 211);
 }
 
-.subtitulos1 {
-  text-align: center;
-  padding-top: 11.81rem;
-  color: rgb(245, 9, 9);
-  text-decoration: none;
-  font-size: 6.61rem;
-  padding-bottom: 14.17rem;
-}
-
-.galeria-index {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.25rem;
-}
-
-.imagen-lateral {
-  flex: 0 0 30%;
-  max-width: 100%;
-}
-
-.boton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 4%;
-  border: 0.219rem solid black;
-  border-radius: 4.375rem;
-  font-size: 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  padding: 0.625rem 1.25rem;
-}
-.boton a {
-  color: red;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.625rem;
-}
-.galeria .imagen {
-  position: relative;
-  text-align: center;
-}
-.galeria .imagen img {
-  margin-top: 4.375rem;
-  max-width: 26.875rem;
-  height: auto;
-}
-
-.pie-foto {
-  margin-top: 2.188rem;
-  margin-bottom: 1.875rem;
-}
-
-.btn-outline-primary > li:hover {
-  text-decoration: none;
-  text-decoration-color: blue;
-}
-
 .footer {
   background-color: rgba(0, 0, 0, 0.788);
   min-height: 11.25rem;
@@ -126,24 +95,20 @@ nav .nombre-compania:hover {
   align-items: center;
   justify-content: center;
 }
-
-.footer-links {
+.footer .footer-links {
   list-style: none;
   text-align: center;
 }
-
-.footer-links > li {
+.footer .footer-links > li {
   display: inline;
   margin: 10px;
 }
-
-.footer-links > li > a {
+.footer .footer-links > li > a {
   display: block;
   text-decoration: none;
   color: rgb(216, 211, 211);
 }
-
-.footer-links > li > a:hover {
+.footer .footer-links > li > a:hover {
   text-decoration: underline;
   text-decoration-color: rgb(216, 211, 211);
 }
@@ -160,90 +125,49 @@ nav .nombre-compania:hover {
   color: rgb(216, 211, 211);
 }
 
-.galerias-de-venta {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 18.89rem;
-  column-gap: 9.44rem;
-  justify-content: center;
-  align-items: baseline;
-  align-content: space-around;
-  position: relative;
-  margin-top: 7.08rem;
-  margin-left: 7.08rem;
-  margin-bottom: 23.62rem;
-  margin-right: 4.72rem;
-}
-.galerias-de-venta img {
-  margin: 0 0.25rem;
-  width: 28.125rem;
-  height: 28.125rem;
-  object-fit: cover;
-}
-
-.ayuda {
-  text-align: left;
-  padding-top: 4.375rem;
-  padding-left: 37.5rem;
-  color: rgb(202, 24, 178);
-  text-decoration: none;
-  font-size: 4.375rem;
-  margin-bottom: 3rem;
-}
-
-.titulos {
-  text-align: left;
-  padding-top: 1.25rem;
-  padding-left: 37.5rem;
-  color: rgb(202, 24, 178);
-  text-decoration: none;
-  font-size: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.subtitulos2 {
-  text-align: left;
-  text-decoration-line: none;
-  display: block;
-  padding-top: 1.25rem;
-  padding-left: 37.5rem;
-  color: rgb(202, 24, 178);
-  text-decoration: none;
-  font-size: 1.563rem;
-  padding-bottom: 1.875rem;
-}
-
-.ayuda-texto,
-form {
-  text-align: left;
-  text-decoration: none;
-  display: block;
-  padding-left: 37.5rem;
-  color: rgb(202, 24, 178);
-  font-size: 1.188rem;
-  width: 43.75rem;
-}
-
-form {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.ayuda-contacto {
-  margin: auto;
-  padding-left: 37.5rem;
-  color: rgb(202, 24, 178);
-  font-size: 1.375rem;
-  text-align: left;
-  padding-bottom: 0.625rem;
-}
-
 .derechos-reservados {
   text-align: center;
   padding: 0.625rem 0;
   background-color: #333;
   color: white;
   font-size: 0.875rem;
+}
+
+.ayuda {
+  text-align: center;
+  color: rgb(202, 24, 178);
+  text-decoration: none;
+  margin-bottom: 3rem;
+}
+
+.titulos {
+  text-align: center;
+  color: rgb(202, 24, 178);
+  text-decoration: none;
+  padding-bottom: 2.5rem;
+}
+
+.subtitulos2 {
+  text-align: center;
+  text-decoration-line: none;
+  display: block;
+  color: rgb(202, 24, 178);
+  text-decoration: none;
+  padding-bottom: 1.875rem;
+}
+
+.ayuda-texto,
+form {
+  box-sizing: border-box;
+  text-align: center;
+  color: rgb(202, 24, 178);
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+.ayuda-texto form,
+form form {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /* Estilo para dispositivos, si es necesario */
@@ -280,8 +204,10 @@ form {
     justify-content: center;
     text-align: center;
     max-width: 100%;
-    padding: 0 1rem; /* Agregar espacio alrededor del texto */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    padding: 0 1rem;
+    /* Agregar espacio alrededor del texto */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño total */
     margin-bottom: 2rem;
   }
   form {
@@ -291,26 +217,12 @@ form {
     justify-content: center;
     text-align: center;
     max-width: 100%;
-    padding: 0 1rem; /* Agrega espacio alrededor del formulario */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    padding: 0 1rem;
+    /* Agrega espacio alrededor del formulario */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño total */
     margin-bottom: 3rem;
   }
-  /*  .footer {  
-    .footer-links {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-
-      >li>a {
-        display: block;
-        max-width: fit-content;
-        align-items: center;
-        text-align: center;
-
-      }
-    }
-  } */
   .galeria-index {
     display: flex;
     flex-direction: column;
@@ -341,31 +253,21 @@ form {
     flex: 0 0 100%;
     text-align: center;
   }
-  /* .ayuda,
-  .titulos,
-  .secciones,
-  .subtitulos1,
-  .subtitulos2 {
-    padding-top: 10px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 100%;
-  } */
 }
 /* Ajuste de estilo para dispositivos de ancho máximo de 768px) */
-@media (max-width: 768px) {
-  .subtitulos1 h1,
-  .subtitulos1 h2,
-  .subtitulos1 h3,
-  .subtitulos1 h4,
-  .subtitulos1 .secciones {
-    font-size: 3.5rem;
-    text-align: center;
-  }
-}
+/* @media (max-width: 768px) {
+    .subtitulos1 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .secciones {
+            font-size: 300.5rem;
+            text-align: center;
+        }
+    }
+} */
 @media (min-width: 1300px) {
   @keyframes show {
     from {
@@ -386,6 +288,34 @@ form {
     animation-range: entry 15% cover 50%;
     animation-fill-mode: both;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  /* font-size: 1.125rem; */
+  color: rgba(192, 71, 11, 0.894);
+}
+
+/* Estilo de la barra de navegación */
+nav {
+  background-color: rgb(148, 14, 4);
+  font-size: 1.125rem;
+}
+nav .nombre-compania {
+  font-size: 3.438rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: 18.75rem;
+  font-style: oblique;
+  color: rgb(216, 211, 211);
+}
+nav .nombre-compania:hover {
+  text-decoration: underline;
+  color: rgb(216, 211, 211);
 }
 
 /*# sourceMappingURL=style.css.map */

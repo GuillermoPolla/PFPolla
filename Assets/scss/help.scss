@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+.ayuda {
+    text-align: center;
+    color: $ColorText;
+    text-decoration: none;
+    margin-bottom: 3rem;
+
+}
+
+.titulos {
+    text-align: center;
+    color: $ColorText;
+    text-decoration: none;
+    padding-bottom: 2.5rem;
+}
+
+.subtitulos2 {
+    text-align: center;
+    text-decoration-line: none;
+    display: block;
+    color: $ColorText;
+    text-decoration: none;
+    padding-bottom: 1.875rem;
+}
+
+.ayuda-texto,
+form {
+    box-sizing: border-box;
+    text-align: center;
+    color: $ColorText;
+    padding-left: 20rem;
+    padding-right: 20rem;
+
+    form {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
