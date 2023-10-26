@@ -1,0 +1,118 @@
+@import "./variables.scss";
+
+/* Estilo para dispositivos, si es necesario */
+@media (max-width: 1280px) {
+    .menu-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-lateral img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu-horizontal>li {
+        margin-bottom: 10px;
+        margin-right: 0;
+
+    }
+
+    .navbar-brand {
+        display: block;
+        text-align: center;
+    }
+
+    .nombre-compania {
+        padding-left: 0;
+        font-size: 1.5rem;
+
+    }
+
+    .ayuda,
+    .titulos,
+    .secciones,
+    .subtitulos1,
+    .subtitulos2,
+    .ayuda-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 1rem;
+        /* Agregar espacio alrededor del texto */
+        box-sizing: border-box;
+        /* Asegura que el padding no afecte el tamaño total */
+        margin-bottom: 2rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 1rem;
+        /* Agrega espacio alrededor del formulario */
+        box-sizing: border-box;
+        /* Asegura que el padding no afecte el tamaño total */
+        margin-bottom: 3rem;
+    }
+
+    .galeria-index {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+
+        .imagen-lateral {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .galeria {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+
+        .imagen {
+            position: relative;
+            text-align: center;
+
+            img {
+                margin-top: 4.375rem;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .boton {
+                flex: 0 0 100%;
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+
+/* Ajuste de estilo para dispositivos de ancho máximo de 768px) */
+/* @media (max-width: 768px) {
+    .subtitulos1 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .secciones {
+            font-size: 300.5rem;
+            text-align: center;
+        }
+    }
+} */
