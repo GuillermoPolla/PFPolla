@@ -101,8 +101,17 @@
 
 
     .subtitulos1 {
-        font-size: 0.4rem;
-        text-align: center;
-        max-width: 100%;
-    }
+        h1 {
+          font-size: 24px; // Cambia el tamaño del subtítulo h1 a 24px
+        }
+      
+        h2 {
+          font-size: 24px; // Cambia el tamaño del subtítulo h2 a 20px
+        }
+      
+        h3 {
+          font-size: 24px; // Cambia el tamaño del subtítulo h3 a 16px
+        }
+      }
+      
 }
